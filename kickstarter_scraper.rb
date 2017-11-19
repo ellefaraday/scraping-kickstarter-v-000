@@ -16,6 +16,7 @@ def create_project_hash
       :location => project.css("ul.project-meta li a").text,
       :percent_funded => project.css("ul.project-stats li.first strong").text.gsub("%", "").to_i
     }
+    projects
   end
 
   #projects = kickstarter.css("li.project.grid_4")
